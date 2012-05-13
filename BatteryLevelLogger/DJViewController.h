@@ -10,4 +10,7 @@
 
 @interface DJViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UILabel *batteryLabel;
+
+- (IBAction)didAskToDumpData:(id)sender;
 @end
