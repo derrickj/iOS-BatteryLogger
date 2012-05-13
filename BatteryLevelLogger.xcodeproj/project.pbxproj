@@ -22,13 +22,13 @@
 		4934C167155DFF92005AE570 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4934C169155DFF92005AE570 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4934C16B155DFF92005AE570 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4934C16F155DFF92005AE570 /* BatteryLevelLogger-Info.plist */ = {isa = PBXFileReference; path = "BatteryLevelLogger-Info.plist"; sourceTree = "<group>"; };
+		4934C16F155DFF92005AE570 /* BatteryLevelLogger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BatteryLevelLogger-Info.plist"; sourceTree = "<group>"; };
 		4934C171155DFF92005AE570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4934C173155DFF92005AE570 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4934C175155DFF92005AE570 /* BatteryLevelLogger-Prefix.pch */ = {isa = PBXFileReference; path = "BatteryLevelLogger-Prefix.pch"; sourceTree = "<group>"; };
-		4934C176155DFF92005AE570 /* DJAppDelegate.h */ = {isa = PBXFileReference; path = DJAppDelegate.h; sourceTree = "<group>"; };
+		4934C175155DFF92005AE570 /* BatteryLevelLogger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BatteryLevelLogger-Prefix.pch"; sourceTree = "<group>"; };
+		4934C176155DFF92005AE570 /* DJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJAppDelegate.h; sourceTree = "<group>"; };
 		4934C177155DFF92005AE570 /* DJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJAppDelegate.m; sourceTree = "<group>"; };
-		4934C179155DFF92005AE570 /* DJViewController.h */ = {isa = PBXFileReference; path = DJViewController.h; sourceTree = "<group>"; };
+		4934C179155DFF92005AE570 /* DJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJViewController.h; sourceTree = "<group>"; };
 		4934C17A155DFF92005AE570 /* DJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJViewController.m; sourceTree = "<group>"; };
 		4934C17D155DFF92005AE570 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DJViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
