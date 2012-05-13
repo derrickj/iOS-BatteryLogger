@@ -42,6 +42,27 @@
     NSLog(@"battery level changed %@", notification);
 }
 
-#pragma mark - CoreData
+#pragma mark - I/O
+// CSV with utc timestamp, and battery as 0-1 float
++ (NSFileHandle *)logFileHandle {
+    NSArray *directories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSLocalDomainMask, YES);
+    NSString *docDir = [directories objectAtIndex:0];
+    NSString *logFilePath = [docDir stringByAppendingPathComponent:@"battery-log.txt"];
+    NSFileHandle *fh = [NSFileHandle fileHandleForUpdatingAtPath:logFilePath];
+    return [[fh retain] autorelease];
+}
+
+- (void)updateLogWithString:(NSString *)msg {
+    NSFileHandle *fileHandle = [DJViewController logFileHandle];
+    [fileHandle seekToEndOfFile];
+    [fileHandle writeData:[[msg stringByAppendingString:@"\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+    [fileHandle closeFile];
+}
+- (NSString *)contentsOfLog {
+    NSFileHandle *fileHandle = [DJViewController logFileHandle];
+    NSData *data = [fileHandle readDataToEndOfFile];
+    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return [string autorelease];
+}
 
 @end
